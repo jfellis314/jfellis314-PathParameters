@@ -18,8 +18,8 @@ public class JavalinSingleton {
 
         app.get("/firstname/{first}", ctx -> {
             
-            //write code here
-
+            //write code here e
+            ctx.result(ctx.pathParam("first"));
         });
 
         return app;
